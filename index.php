@@ -4,11 +4,11 @@ error_reporting(E_ALL);
 ini_set('display_errors', '1');
 
 require_once 'classes/Instagram.class.php';
+require_once 'classes/connect.class.php';
+require_once 'classes/Pic.class.php';
+require_once 'classes/Queue.class.php';
 
-$insta = new Instagram();
-
-$res = $insta->getPictures();
-
+require_once 'ajax.php';
 ?>
 <!doctype html>
 <html lang="fr">
@@ -18,12 +18,11 @@ $res = $insta->getPictures();
   <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
-	<h1>Instagram</h1>
 	
+
 		<?php foreach($res->data as $picture){?>
 			<img src="<?php echo $picture->images->thumbnail->url;?>" />		
 		<?php }?>
-		
 		
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
   <script src="/js/script.js"></script>
