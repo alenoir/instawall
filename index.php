@@ -19,14 +19,11 @@ require_once 'ajax.php';
 </head>
 <body>
 	
-<<<<<<< HEAD
-=======
+
 		<?php foreach($res->data as $picture){?>
 			<img src="<?php echo $picture->images->thumbnail->url;?>" />		
 		<?php }?>
 		
-		
->>>>>>> f247221dd263d9ca5a9002d4c6aeef178ca2d827
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
   <script src="/js/script.js"></script>
   <script src="/js/photoWall.js"></script>
