@@ -7,7 +7,7 @@ require_once 'classes/Queue.class.php';
 class Pic
 {
 
-	public function init($limit=50){
+	public function init($limit=100){
 		$Queue = new Queue();
 		$Queue->clear();
 

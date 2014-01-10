@@ -15,16 +15,21 @@ require_once 'ajax.php';
 <head>
   <meta charset="utf-8">
   <title>Insta</title>
+  <link rel="stylesheet" href="css/foundation.css">
   <link rel="stylesheet" href="/css/style.css">
+  
 </head>
 <body>
-	
 
-		<?php foreach($res->data as $picture){?>
-			<img src="<?php echo $picture->images->thumbnail->url;?>" />		
-		<?php }?>
-		
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-  <script src="/js/script.js"></script>
+  
+ <div id="container" class="row fullWidth">
+      
+            
+</div>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="/js/script.js"></script>
+<script src="js/foundation.min.js"></script>
+
 </body>
 </html>

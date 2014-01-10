@@ -1,0 +1,22 @@
+
+
+.fullWidth {
+   width: 100%!important;
+   margin-left: auto!important;
+   margin-right: auto!important;
+   max-width: initial!important;
+   position: relative;
+}
+
+.column, .columns {
+padding-left: 0!important;
+padding-right: 0!important;
+
+}
+
+.pic {
+position: relative;
+}
+.pic img{
+width:100%; 
+}
